@@ -1,0 +1,13 @@
+# Green phase (Timer300 done AND NOT Timer301 → Green)
+300 -301 = 100
+
+# Yellow phase
+301 -302 = 101
+
+# Red phase
+302 -300 = 102
+
+# Timer chain (preset in ms)
+100 = 300 5000
+101 = 301 2000
+102 = 302 5000

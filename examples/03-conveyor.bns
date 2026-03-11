@@ -1,0 +1,6 @@
+# Run conveyor when sensor detects AND no emergency stop
+10 -99 = 100
+
+# Stop conveyor and activate alarm if jam detected
+20 = 101
+20 =/ 100

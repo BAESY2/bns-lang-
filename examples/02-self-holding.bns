@@ -1,0 +1,9 @@
+# Motor start/stop circuit
+# START(X1) AND NOT STOP(X2) OR HOLDING(Y10) → MOTOR(Y10)
+# 110 = Y10 as contact (100+10), coil 10 = Y10
+
+1 -2 | 110 = 10
+
+# ──┤ X1 ├──┤/X2 ├──┬──( Y10 )
+#                    │
+# ──┤ Y10 ├──────────┘

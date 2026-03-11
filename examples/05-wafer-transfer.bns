@@ -1,0 +1,10 @@
+# SEMI E84 Load Port handshake
+# CS_0(1) AND VALID(2) AND NOT BUSY(200) → TR_REQ(100)
+1 2 -200 = 100
+
+# Transfer active: TR_REQ AND L_REQ → BUSY
+100 3 = 200
+
+# Transfer complete: COMPT signal resets BUSY
+4 =/ 200
+4 =/ 100

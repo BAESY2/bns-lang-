@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bns-lang": {
+      "command": "node",
+      "args": ["./src/mcp-server.js"]
+    }
+  }
+}

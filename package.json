@@ -1,0 +1,37 @@
+{
+  "name": "bns-lang",
+  "version": "2.0.0",
+  "description": "Write PLC ladder logic with just a numpad. A minimal DSL that compiles to IEC 61131-3.",
+  "main": "src/index.js",
+  "bin": {
+    "bns": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node tests/run.js",
+    "compile": "node src/cli.js compile"
+  },
+  "keywords": [
+    "plc",
+    "ladder-logic",
+    "iec-61131-3",
+    "dsl",
+    "industrial-automation",
+    "structured-text",
+    "ls-electric",
+    "xgt",
+    "mcp",
+    "cursor",
+    "claude",
+    "ai-coding",
+    "code-generation"
+  ],
+  "author": "ZENION",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenion/bns-lang.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

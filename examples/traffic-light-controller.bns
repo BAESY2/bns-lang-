@@ -1,0 +1,22 @@
+# Traffic Light Controller (3-phase)
+# Green → Yellow → Red → Green ...
+#
+# I/O Mapping:
+# Y0 = Green lamp, Y1 = Yellow lamp, Y2 = Red lamp
+# T300, T301, T302 = phase timers (5s, 2s, 5s)
+#
+# Logic:
+
+# Green phase: T302 done AND T300 not done
+302 -300 = 0
+
+# Yellow phase: T300 done AND T301 not done
+300 -301 = 1
+
+# Red phase: T301 done AND T302 not done
+301 -302 = 2
+
+# Timer chain: each phase starts its timer
+0 = 300 5000
+1 = 301 2000
+2 = 302 5000

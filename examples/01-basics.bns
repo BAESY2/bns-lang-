@@ -1,0 +1,5 @@
+# Lamp ON when both switches pressed
+1 2 = 100
+
+# X1 AND X2 → Y100
+# ──┤ X1 ├──┤ X2 ├──( Y100 )
